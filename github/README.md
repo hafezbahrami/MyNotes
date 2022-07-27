@@ -6,7 +6,7 @@ response "Initialized empty Git repository in C:/Users/Hafez/Desktop/testt/.git/
 It initialized an empty repository in Git, and it will contain .git folder that includes all the files on handling the version controling in Git. No 
 need to worry about ,git folder.
 
-![insert_pic](img/git_init.png)
+![insert_pic](img/git_init.PNG)
 
 
 # git status
@@ -18,7 +18,7 @@ If I then in the same "cmd" type the "**git status**" command, it says no commit
  
 2) **get the git status**: Now let's try "**git status**" in cmd.
 
-![insert_pic](img/git_status.png)
+![insert_pic](img/git_status.PNG)
 
 3) **Commiting the changes**:There are two steps to commit a change: (a) We should decide what file/changes we want to add to staging step, and (b) from staging step we then commit
 The reason for that is in large projects, you might have many changes that only few of them need to be commited.
@@ -30,7 +30,7 @@ for step (b), for the commiting staged changes" there are a few ways to do it. T
 -m is for the message.
 
 now we can "**git log**" to get a history of commit. Each commitis identified by a commit-hash.
-![insert_pic](img/commit_log.png)
+![insert_pic](img/commit_log.PNG)
 
 4) **git push**: Basically pushing a commited code located in the local repository into the remote repository (so we can see it in our github account).
 
