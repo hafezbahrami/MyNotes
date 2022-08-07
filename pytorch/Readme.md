@@ -10,7 +10,7 @@ There is a difference between X.view(), X.permute(), X.reshape:
 **X.view()** works on contiguous tensors, while **X.reshape** works on non-contigous tensors. **X.permute()** returns a view of the original 
 tensor input with its dimensions permuted. It is quite different to view and reshape.
 
-![view_permute](./img/view_permute.png)
+![view_permute](./img/view_permute.PNG)
 
 
 
