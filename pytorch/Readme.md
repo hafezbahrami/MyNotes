@@ -12,6 +12,9 @@ tensor input with its dimensions permuted. It is quite different to view and res
 
 ![view_permute](./img/view_permute.PNG)
 
+II) Convert a list to tensor (here, float)
+**torch.tensor(  [1,2,3], dtype=torch.long  )**
+
 
 
 II) 
@@ -23,4 +26,10 @@ organized. These operations include: narrow(), view(), expand() and transpose().
 II) difference between **nn.CrossEntropyLoss()** and Log-liklyhood-loss **nn.NLLLoss()** losses: If the model defined in a way that the there is
  a nn.Softmax(LOGITS) layer after the  logits-classifier layer, then we should use nn.NLLLoss. nn.CrossEntropyLoss is supposed to get the 
  logits of classifier layer and do the nn.Softmax itself.
+ 
+ For loss in NLP, where we want to exclude the padding from loss:
+ ```
+PAD_IDX = en_vocab['<pad>'] # PAD_IDX=1
+criterion = nn.CrossEntropyLoss(ignore_index=PAD_IDX)
+ ```
 
